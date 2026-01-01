@@ -1,0 +1,4 @@
+{
+  "finding_id": "9b32b955-8ee6-45bb-849e-16f4fd91dd4f",
+  "code_context": "def login(username, password):\n    # Vulnerable SQL query - concatenating user input\n    query = \"SELECT * FROM users WHERE username='\" + username + \"' AND password='\" + password + \"'\"\n    cursor.execute(query)\n    return cursor.fetchone()"
+}
