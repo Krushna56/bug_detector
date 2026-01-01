@@ -1,0 +1,23 @@
+# Minimal requirements to get started - no compilation needed
+# Install these first, then add AI features later
+
+# Core Framework
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-multipart
+
+# Database (SQLite - no additional drivers needed)
+sqlalchemy
+alembic
+
+# HTTP Client
+httpx
+
+# Environment
+python-dotenv
+
+# Security & Auth
+python-jose[cryptography]
+passlib[bcrypt]

@@ -6,6 +6,10 @@ import os
 # Ensure data directory exists
 os.makedirs("./data", exist_ok=True)
 
+# Debug: Print the DATABASE_URL being used
+print(f"DEBUG: DATABASE_URL = {settings.DATABASE_URL}")
+print(f"DEBUG: OPENAI_API_KEY exists = {bool(settings.OPENAI_API_KEY)}")
+
 # SQLite engine with check_same_thread=False for FastAPI
 engine = create_engine(
     settings.DATABASE_URL,
